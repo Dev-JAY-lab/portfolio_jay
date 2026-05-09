@@ -167,17 +167,18 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="formcontainer">
-        <form class="form" id="contactForm">
+        <form class="form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+           <input type="hidden" name="access_key" value="bae98ab3-6ad0-4ec2-9961-fa5f42c1939c">
           <div class="input-group">
-            <input type="text" required />
+            <input type="text" name="name" required />
             <label>Name</label>
           </div>
           <div class="input-group">
-            <input type="email" required />
+            <input type="email" name="email" required />
             <label>Email</label>
           </div>
           <div class="input-group">
-            <input type="text" required />
+            <input type="text" name="message"" required />
             <label>Message</label>
           </div>
           <button type="submit">Submit</button>
